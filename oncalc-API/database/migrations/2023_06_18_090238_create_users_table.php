@@ -16,7 +16,7 @@ return new class extends Migration
             $table->collation = 'utf8_general_ci';
 
             $table->id();
-            $table->string('username')->unique();
+            $table->string('name')->unique();
             $table->string('password');
             $table->string('created_at')->nullable();
             $table->string('updated_at')->nullable();
